@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://by7jangicrtcv"]
+
+[ext_resource type="PackedScene" uid="uid://dqqxiexaoi81q" path="res://Scenes/Boundary.tscn" id="1_f6slu"]
+[ext_resource type="PackedScene" uid="uid://bm87rgrj6ohlm" path="res://Scenes/WitchManager.tscn" id="1_fr3la"]
+
+[node name="Level 01" type="Node2D"]
+
+[node name="WitchManager" parent="." instance=ExtResource("1_fr3la")]
+position = Vector2(121, 112)
+
+[node name="Boundaries" type="Node2D" parent="."]
+
+[node name="Boundary" parent="Boundaries" instance=ExtResource("1_f6slu")]
+position = Vector2(320, 57)
+rotation = -0.139626
+scale = Vector2(29.315, 1)
+
+[node name="Boundary2" parent="Boundaries" instance=ExtResource("1_f6slu")]
+position = Vector2(690, 610)
+rotation = -0.0390778
+scale = Vector2(43.0267, 1)
+
+[node name="Boundary8" parent="Boundaries" instance=ExtResource("1_f6slu")]
+position = Vector2(838, 23)
+rotation = 0.0136534
+scale = Vector2(29.552, 1)
+
+[node name="Boundary3" parent="Boundaries" instance=ExtResource("1_f6slu")]
+position = Vector2(180, 494)
+rotation = 0.979384
+scale = Vector2(16.047, 1)
+
+[node name="Boundary4" parent="Boundaries" instance=ExtResource("1_f6slu")]
+position = Vector2(85, 233)
+rotation = 1.47002
+scale = Vector2(16.047, 1)
+
+[node name="Boundary5" parent="Boundaries" instance=ExtResource("1_f6slu")]
+position = Vector2(359, 361)
+rotation = 1.47002
+scale = Vector2(16.047, 1)
+
+[node name="Boundary6" parent="Boundaries" instance=ExtResource("1_f6slu")]
+position = Vector2(626, 346)
+rotation = 0.947089
+scale = Vector2(16.047, 1)
+
+[node name="Boundary7" parent="Boundaries" instance=ExtResource("1_f6slu")]
+position = Vector2(1106, 313)
+rotation = 1.59385
+scale = Vector2(29.942, 1)
