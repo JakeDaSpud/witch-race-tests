@@ -1,12 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://by7jangicrtcv"]
+[gd_scene load_steps=6 format=3 uid="uid://by7jangicrtcv"]
 
 [ext_resource type="PackedScene" uid="uid://dqqxiexaoi81q" path="res://Scenes/Boundary.tscn" id="1_f6slu"]
 [ext_resource type="PackedScene" uid="uid://bm87rgrj6ohlm" path="res://Scenes/WitchManager.tscn" id="1_fr3la"]
+[ext_resource type="PackedScene" uid="uid://dc3fa1s107vl0" path="res://Entities/broomer.tscn" id="2_g0uxb"]
+[ext_resource type="PackedScene" uid="uid://ds28hd04ywq7c" path="res://Entities/eastcoastrepresent.tscn" id="3_avkje"]
+[ext_resource type="PackedScene" uid="uid://dwn8olcr2nd8k" path="res://Entities/kinkler.tscn" id="4_gr51b"]
 
 [node name="Level 01" type="Node2D"]
 
 [node name="WitchManager" parent="." instance=ExtResource("1_fr3la")]
-position = Vector2(121, 112)
+position = Vector2(134, 125)
+witches = Array[PackedScene]([ExtResource("2_g0uxb"), ExtResource("3_avkje"), ExtResource("4_gr51b")])
 
 [node name="Boundaries" type="Node2D" parent="."]
 

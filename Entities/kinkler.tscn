@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwn8olcr2nd8k"]
+
+[ext_resource type="PackedScene" uid="uid://dt4t3vwn8xivt" path="res://Entities/witch.tscn" id="1_vq4sg"]
+[ext_resource type="Texture2D" uid="uid://mgkeeii4ubh2" path="res://Assets/Sprites/kinkler.png" id="2_bcpyx"]
+
+[node name="Witch" instance=ExtResource("1_vq4sg")]
+display_name = "kinkler"
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource("2_bcpyx")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="1"]
+polygon = PackedVector2Array(-22, 11, -22, 9, -17, 4, -15, 3, -11, 2, -10, 1, -9, 0, -3, -1, -1, -2, -2, -5, -5, -10, -5, -12, -3, -14, 1, -17, 6, -17, 11, -15, 11, 0, 23, 0, 23, 2, 21, 4, 19, 5, 16, 6, 12, 7, 7, 10, 6, 11, 1, 12, -5, 13, -8, 16, -10, 17, -13, 17, -17, 16, -21, 12)

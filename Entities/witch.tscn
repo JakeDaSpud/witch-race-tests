@@ -1,20 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://dt4t3vwn8xivt"]
+[gd_scene load_steps=2 format=3 uid="uid://dt4t3vwn8xivt"]
 
 [ext_resource type="Script" uid="uid://uldg23vi86bn" path="res://Scripts/witch.gd" id="1_f8wfy"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_lvbw7"]
-
 [node name="Witch" type="RigidBody2D"]
+gravity_scale = 0.0
 inertia = 2.0
+lock_rotation = true
 script = ExtResource("1_f8wfy")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_left = -10.0
-offset_top = -10.0
-offset_right = 10.0
-offset_bottom = 10.0
-color = Color(0.69698, 0.552677, 0.999998, 1)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_lvbw7")
-debug_color = Color(0, 0.610941, 0.631958, 0.42)
+[node name="Sprite" type="Sprite2D" parent="."]
+texture_filter = 1

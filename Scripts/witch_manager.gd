@@ -15,8 +15,14 @@ func _ready():
 		var nextSpawn : int = randi() % spawns.size();
 		
 		# Spawn witch there
-		var newWitch : Node = witch.new();
-		spawns[nextSpawn].add_child(newWitch);
+		var newWitch = witch.instantiate();
+		newWitch.position = spawns[nextSpawn].position;
+		$Witches.add_child(newWitch);
 		
 		# Remove the used spawn point
 		spawns.remove_at(nextSpawn);
+	
+	spawns.clear();
+	
+	for witch in $Witches.get_children() as Array[PackedScene]:
+		witch.begin_movement();

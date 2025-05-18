@@ -2,7 +2,7 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t5qyx"]
 
-[node name="Boundary" type="Node2D"]
+[node name="Boundary" type="StaticBody2D"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = -10.0

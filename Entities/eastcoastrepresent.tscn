@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://ds28hd04ywq7c"]
+
+[ext_resource type="PackedScene" uid="uid://dt4t3vwn8xivt" path="res://Entities/witch.tscn" id="1_3pygr"]
+[ext_resource type="Texture2D" uid="uid://2qrbah4ekp0a" path="res://Assets/Sprites/eastcoastrepresent.png" id="2_ybxlg"]
+
+[node name="Witch" instance=ExtResource("1_3pygr")]
+display_name = "eastcoastrepresent"
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource("2_ybxlg")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="1"]
+polygon = PackedVector2Array(-10, -17, 3, -17, 4, -16, 8, -9, 9, -4, 14, -5, 20, -5, 20, -3, 18, -1, 16, 0, 13, 1, 11, 2, 10, 7, 8, 9, 5, 10, 3, 11, -5, 11, -5, 8, -8, 8, -8, 10, -9, 12, -10, 13, -12, 16, -14, 17, -16, 17, -18, 16, -19, 15, -19, 8, -18, 6, -16, 5, -11, 4, -8, 3, -7, 2, -5, 1, -4, 0, -4, -6, -7, -6, -8, -8, -8, -10, -7, -11, -8, -13, -9, -14, -10, -16)

@@ -1,10 +1,10 @@
 extends RigidBody2D
 
 @export var display_name : String = "DEFAULT_WITCH";
-var starting_force : float = 5;
+var starting_force : int = 50;
 
 func begin_movement() -> void:
-	self.apply_impulse(Vector2(randi(), randi()));
+	self.apply_impulse(Vector2(randi() % starting_force, randi() % starting_force));
 
 func body_entered(body : Node) -> void:
 	
