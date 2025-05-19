@@ -1,12 +1,19 @@
-[gd_scene load_steps=6 format=3 uid="uid://by7jangicrtcv"]
+[gd_scene load_steps=8 format=3 uid="uid://by7jangicrtcv"]
 
 [ext_resource type="PackedScene" uid="uid://dqqxiexaoi81q" path="res://Scenes/Boundary.tscn" id="1_f6slu"]
 [ext_resource type="PackedScene" uid="uid://bm87rgrj6ohlm" path="res://Scenes/WitchManager.tscn" id="1_fr3la"]
+[ext_resource type="Texture2D" uid="uid://qyv64utpfauo" path="res://Assets/Sprites/bg01.png" id="1_gr51b"]
 [ext_resource type="PackedScene" uid="uid://dc3fa1s107vl0" path="res://Entities/broomer.tscn" id="2_g0uxb"]
 [ext_resource type="PackedScene" uid="uid://ds28hd04ywq7c" path="res://Entities/eastcoastrepresent.tscn" id="3_avkje"]
 [ext_resource type="PackedScene" uid="uid://dwn8olcr2nd8k" path="res://Entities/kinkler.tscn" id="4_gr51b"]
+[ext_resource type="PackedScene" uid="uid://b6b7gk5xtwhd7" path="res://Entities/Flag.tscn" id="6_avkje"]
 
 [node name="Level 01" type="Node2D"]
+
+[node name="Bg01" type="Sprite2D" parent="."]
+position = Vector2(567, 318)
+scale = Vector2(10, 10)
+texture = ExtResource("1_gr51b")
 
 [node name="WitchManager" parent="." instance=ExtResource("1_fr3la")]
 position = Vector2(134, 125)
@@ -44,6 +51,46 @@ position = Vector2(359, 361)
 rotation = 1.47002
 scale = Vector2(16.047, 1)
 
+[node name="Boundary9" parent="Boundaries" instance=ExtResource("1_f6slu")]
+position = Vector2(787, 338)
+rotation = 2.93393
+scale = Vector2(14.766, 1)
+
+[node name="Boundary11" parent="Boundaries" instance=ExtResource("1_f6slu")]
+position = Vector2(840, 163)
+rotation = 3.60559
+scale = Vector2(14.766, 1)
+
+[node name="Boundary16" parent="Boundaries" instance=ExtResource("1_f6slu")]
+position = Vector2(985, 101)
+rotation = 2.63902
+scale = Vector2(14.766, 1)
+
+[node name="Boundary12" parent="Boundaries" instance=ExtResource("1_f6slu")]
+position = Vector2(531, 507)
+rotation = 2.94491
+scale = Vector2(4.17579, 1)
+
+[node name="Boundary13" parent="Boundaries" instance=ExtResource("1_f6slu")]
+position = Vector2(651, 551)
+rotation = -0.00790548
+scale = Vector2(4.17579, 1)
+
+[node name="Boundary14" parent="Boundaries" instance=ExtResource("1_f6slu")]
+position = Vector2(463, 325)
+rotation = 1.34391
+scale = Vector2(6.81414, 1)
+
+[node name="Boundary15" parent="Boundaries" instance=ExtResource("1_f6slu")]
+position = Vector2(285, 301)
+rotation = -0.228251
+scale = Vector2(6.81414, 1)
+
+[node name="Boundary10" parent="Boundaries" instance=ExtResource("1_f6slu")]
+position = Vector2(831, 529)
+rotation = 1.94902
+scale = Vector2(8.58935, 1)
+
 [node name="Boundary6" parent="Boundaries" instance=ExtResource("1_f6slu")]
 position = Vector2(626, 346)
 rotation = 0.947089
@@ -53,3 +100,20 @@ scale = Vector2(16.047, 1)
 position = Vector2(1106, 313)
 rotation = 1.59385
 scale = Vector2(29.942, 1)
+
+[node name="Flag" parent="." instance=ExtResource("6_avkje")]
+position = Vector2(918, 474)
+collision_layer = 3
+
+[node name="win" type="RichTextLabel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -0.5
+offset_right = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,0 +1,149 @@
+[gd_scene load_steps=8 format=3 uid="uid://djrfbyqrtod38"]
+
+[ext_resource type="Texture2D" uid="uid://drq3o45a7kd5g" path="res://Assets/Sprites/bg02.png" id="1_q4l8i"]
+[ext_resource type="PackedScene" uid="uid://bm87rgrj6ohlm" path="res://Scenes/WitchManager.tscn" id="2_h0jn1"]
+[ext_resource type="PackedScene" uid="uid://dc3fa1s107vl0" path="res://Entities/broomer.tscn" id="3_bbo2d"]
+[ext_resource type="PackedScene" uid="uid://ds28hd04ywq7c" path="res://Entities/eastcoastrepresent.tscn" id="4_i5ldb"]
+[ext_resource type="PackedScene" uid="uid://dwn8olcr2nd8k" path="res://Entities/kinkler.tscn" id="5_oxvi3"]
+[ext_resource type="PackedScene" uid="uid://dqqxiexaoi81q" path="res://Scenes/Boundary.tscn" id="6_fp6ws"]
+[ext_resource type="PackedScene" uid="uid://b6b7gk5xtwhd7" path="res://Entities/Flag.tscn" id="7_3g5eb"]
+
+[node name="Level 02" type="Node2D"]
+
+[node name="Bg02" type="Sprite2D" parent="."]
+position = Vector2(567, 318)
+scale = Vector2(10, 10)
+texture = ExtResource("1_q4l8i")
+
+[node name="WitchManager" parent="." instance=ExtResource("2_h0jn1")]
+position = Vector2(64, 63)
+witches = Array[PackedScene]([ExtResource("3_bbo2d"), ExtResource("4_i5ldb"), ExtResource("5_oxvi3")])
+
+[node name="Boundaries" type="Node2D" parent="."]
+
+[node name="Boundary" parent="Boundaries" instance=ExtResource("6_fp6ws")]
+position = Vector2(22, 318)
+rotation = -1.58112
+scale = Vector2(34.0713, 1)
+
+[node name="Boundary5" parent="Boundaries" instance=ExtResource("6_fp6ws")]
+position = Vector2(204, 479)
+rotation = -1.58112
+scale = Vector2(17.1666, 1)
+
+[node name="Boundary6" parent="Boundaries" instance=ExtResource("6_fp6ws")]
+position = Vector2(354, 490)
+rotation = -1.58112
+scale = Vector2(17.1666, 1)
+
+[node name="Boundary7" parent="Boundaries" instance=ExtResource("6_fp6ws")]
+position = Vector2(559, 374)
+rotation = -1.58112
+scale = Vector2(26.3528, 1)
+
+[node name="Boundary9" parent="Boundaries" instance=ExtResource("6_fp6ws")]
+position = Vector2(277, 329)
+rotation = -0.0124369
+scale = Vector2(8.79584, 1)
+
+[node name="Boundary10" parent="Boundaries" instance=ExtResource("6_fp6ws")]
+position = Vector2(732, 120)
+rotation = -0.0124369
+scale = Vector2(17.1177, 1)
+
+[node name="Boundary11" parent="Boundaries" instance=ExtResource("6_fp6ws")]
+position = Vector2(732, 301)
+rotation = -0.0135428
+scale = Vector2(7.1427, 1)
+
+[node name="Boundary12" parent="Boundaries" instance=ExtResource("6_fp6ws")]
+position = Vector2(734, 189)
+rotation = -0.0135428
+scale = Vector2(7.1427, 1)
+
+[node name="Boundary13" parent="Boundaries" instance=ExtResource("6_fp6ws")]
+position = Vector2(673, 245)
+rotation = -1.55618
+scale = Vector2(7.1427, 1)
+
+[node name="Boundary14" parent="Boundaries" instance=ExtResource("6_fp6ws")]
+position = Vector2(675, 370)
+rotation = -1.55618
+scale = Vector2(7.1427, 1)
+
+[node name="Boundary15" parent="Boundaries" instance=ExtResource("6_fp6ws")]
+position = Vector2(411, 444)
+rotation = 0.00721049
+scale = Vector2(5.58418, 1)
+
+[node name="Boundary16" parent="Boundaries" instance=ExtResource("6_fp6ws")]
+position = Vector2(496, 546)
+rotation = 0.00721049
+scale = Vector2(5.58418, 1)
+
+[node name="Boundary17" parent="Boundaries" instance=ExtResource("6_fp6ws")]
+position = Vector2(512, 215)
+rotation = 0.68355
+scale = Vector2(5.58418, 1)
+
+[node name="Boundary18" parent="Boundaries" instance=ExtResource("6_fp6ws")]
+position = Vector2(947, 318)
+rotation = 0.68355
+scale = Vector2(5.58418, 1)
+
+[node name="Boundary19" parent="Boundaries" instance=ExtResource("6_fp6ws")]
+position = Vector2(1066, 543)
+rotation = 0.68355
+scale = Vector2(5.58418, 1)
+
+[node name="Boundary20" parent="Boundaries" instance=ExtResource("6_fp6ws")]
+position = Vector2(121, 524)
+rotation = -0.0226055
+scale = Vector2(3.08764, 1)
+
+[node name="Boundary21" parent="Boundaries" instance=ExtResource("6_fp6ws")]
+position = Vector2(88, 446)
+rotation = -0.0226055
+scale = Vector2(3.08764, 1)
+
+[node name="Boundary22" parent="Boundaries" instance=ExtResource("6_fp6ws")]
+position = Vector2(145, 359)
+rotation = -0.0226055
+scale = Vector2(3.08764, 1)
+
+[node name="Boundary8" parent="Boundaries" instance=ExtResource("6_fp6ws")]
+position = Vector2(905, 325)
+rotation = -1.58112
+scale = Vector2(21.6162, 1)
+
+[node name="Boundary2" parent="Boundaries" instance=ExtResource("6_fp6ws")]
+position = Vector2(1127, 321)
+rotation = -1.53196
+scale = Vector2(34.0713, 1)
+
+[node name="Boundary3" parent="Boundaries" instance=ExtResource("6_fp6ws")]
+position = Vector2(574, 9)
+rotation = 0.0206943
+scale = Vector2(61.8868, 1)
+
+[node name="Boundary4" parent="Boundaries" instance=ExtResource("6_fp6ws")]
+position = Vector2(578, 638)
+rotation = 0.0206943
+scale = Vector2(61.8868, 1)
+
+[node name="Flag" parent="." instance=ExtResource("7_3g5eb")]
+position = Vector2(761, 392)
+collision_layer = 3
+
+[node name="win" type="RichTextLabel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -0.5
+offset_right = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1

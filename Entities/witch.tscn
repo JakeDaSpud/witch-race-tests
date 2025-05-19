@@ -4,8 +4,9 @@
 
 [node name="Witch" type="RigidBody2D"]
 gravity_scale = 0.0
-inertia = 2.0
 lock_rotation = true
+contact_monitor = true
+max_contacts_reported = 4
 script = ExtResource("1_f8wfy")
 
 [node name="Sprite" type="Sprite2D" parent="."]

@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://mgkeeii4ubh2" path="res://Assets/Sprites/kinkler.png" id="2_bcpyx"]
 
 [node name="Witch" instance=ExtResource("1_vq4sg")]
+scale = Vector2(5, 5)
 display_name = "kinkler"
 
 [node name="Sprite" parent="." index="0"]
